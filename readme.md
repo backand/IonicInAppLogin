@@ -8,11 +8,13 @@
 Login code can be found at controller.js:
 
 For mobile: 
+<code>
      facebookConnectPlugin.login(["public_profile", "email"]
-     
+</code>     
 For desktop:
+<code>
      LoginService.socialSignIn('facebook')
-
+</code>
 
 desktop version use redirect mechanism to do authentication over facebook and Backand and go back to user application.
  
