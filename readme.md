@@ -8,13 +8,27 @@
 Login code can be found at controller.js:
 
 For mobile: 
+<br/>
 <code>
      facebookConnectPlugin.login(["public_profile", "email"]
 </code>     
 For desktop:
+<br/>
 <code>
      LoginService.socialSignIn('facebook')
 </code>
 
 desktop version use redirect mechanism to do authentication over facebook and Backand and go back to user application.
  
+##### Starter
+To run application be sure you have ionic cli installed, and run:
+
+<code>
+     ionic serve
+</code>
+
+If you to run it in your android device:
+
+<code>
+     ionic run android -l -c
+</code>
