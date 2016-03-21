@@ -1,0 +1,23 @@
+{
+  "name": "angularbknd-sdk",
+  "description": "Backand SDK for Angular",
+  "version": "1.8.0",
+  "main": [
+    "dist/backand.min.js"
+  ],
+  "ignore": [
+    "Bower/*",
+    "example/*",
+    "Bower",
+    "src",
+    "example",
+    "package.json",
+    "Gruntfile.js"
+  ],
+  "homepage": "https://github.com/backand/angularbknd-sdk",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "angular": "latest"
+  }
+}

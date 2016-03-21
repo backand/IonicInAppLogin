@@ -1,0 +1,46 @@
+<ion-view title="Backand Social App Example">
+
+  <ion-content class="padding has-header">
+
+    <!--<div class="bar bar-header">-->
+      <!--<span ng-click="login.signout()" class="cancel-create">sign out</span>-->
+      <!--<button class="button button-calm" ng-click="login.anonymousLogin()">Guest login</button>-->
+
+    <!--</div>-->
+    <div class="bar bar-subheader">
+      <form ng-submit="login.signin()">
+        <div class="list">
+
+          <label class="item item-input">
+            <input id="email" name="email" type="email" placeholder="Your email" ng-model="login.email">
+          </label>
+          <label class="item item-input">
+            <input id="password" name="password" type="password" placeholder="Your password" ng-model="login.password">
+          </label>
+        </div>
+        <div class="padding">
+          <button class="button button-block button-positive" type="submit">
+            Login
+          </button>
+        </div>
+      </form>
+      <div class="padding">
+        <ion-item nav-clear menu-close class="dark-bg light item-icon-left" ng-click="login.facebookTokenSingin()">
+          <i class="icon ion-social-facebook"></i>
+          Facebook Login
+        </ion-item>
+      </div>
+      <div class="card" ng-if="login.isLoggedWihtBackand">
+        <div class="item item-divider">
+          {{login.facebookToken}}
+        </div>
+        <div class="item item-text-wrap">
+          <b>Username:</b> {{login.username}}
+          <p><b>Role:</b> {{login.role}}</p>
+        </div>
+        <div class="item item-divider">
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

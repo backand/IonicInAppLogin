@@ -1,0 +1,62 @@
+<ion-view view-title="Signup">
+  <ion-content class="padding has-header">
+    <div class="bar bar-subheader">
+      <form>
+        <div class="list">
+          <div class="row">
+            <div class="col">
+              <label class="item item-input">
+                <input id="email" name="email" type="email" placeholder="Your email"
+                       ng-model="vm.email">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="item item-input">
+                <input id="firstname" name="firstname" type="text" placeholder="Your first name"
+                       ng-model="vm.firstName">
+              </label>
+            </div>
+            <div class="col">
+              <label class="item item-input">
+                <input id="username" name="lastname" type="text" placeholder="Your last name"
+                       ng-model="vm.lastName">
+              </label>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+
+              <label class="item item-input">
+                <input id="password" name="password" type="password" placeholder="Your password"
+                       ng-model="vm.password">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+
+              <label class="item item-input">
+                <input id="again" name="again" type="password" placeholder="confirm your password"
+                       ng-model="vm.again">
+              </label>
+            </div>
+          </div>
+          <h4 style="color:red;" ng-bind="vm.errorMessage"></h4>
+
+          <div class="">
+            <button class="button button-block button-stable" type="submit" ng-click="vm.signup()">
+              SignUp
+            </button>
+          </div>
+          <ion-item nav-clear menu-close class="dark-bg light item-icon-left" ng-click="vm.signupFacebook()">
+            <i class="icon ion-social-facebook"></i>
+            Signup with Facebook
+          </ion-item>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>
