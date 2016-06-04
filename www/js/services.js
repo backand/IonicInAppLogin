@@ -53,6 +53,15 @@ angular.module('SimpleRESTIonic.services', [])
       return Backand.signin(email, password);
     };
 
+    service.socialSignIn = function (provider) {
+      return Backand.socialSignIn(provider);
+    };
+
+    service.socialSignUp = function (provider) {
+      return Backand.socialSignUp(provider);
+
+    };
+
     service.anonymousLogin= function(){
       // don't have to do anything here,
       // because we set app token att app.js
