@@ -22,10 +22,17 @@ The desktop, on the other hand, performs Facebook-based authentication by using 
 
 The crucial difference between the two is the app experience. With the desktop version, registration and login will be conducted via a series of page redirects, taking the user from your application to facebook, then back upon completion of log-in. The mobile version, on the other hand, leverages the Facebook mobile app to perform authentication, supplying the authentication token to Backand once the authentication process is complete.
  
-##### Starting the application
+#### Starting the application
 
-To run the application on your local machine, you need to first install [Ionic's Command Line Interface (CLI)](http://ionicframework.com/docs/cli/). Once you have installed the CLI, navigate to the application's directory and run the app by executing the following command from the console:
+To run the application on your local machine, you need to first install [Ionic's Command Line Interface (CLI)](http://ionicframework.com/docs/cli/). Once you have installed the CLI, get the latest code from github:
 
+<code>
+     git clone https://github.com/backand/IonicInAppLogin.git
+     
+     cd IonicInAppLogin
+</code>
+
+Run the app by executing the following command from the console:
 <code>
      ionic serve
 </code>
