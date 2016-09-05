@@ -1,4 +1,21 @@
-<a name="1.8.0"></a>
+<a name="1.8.2"></a>
+
+### 1.8.2 (2015-11-19)
+
+#### Features
+
+* Add support for socket.io to get evenyts in real-time
+* **runSocket** Default false. Need to set to true to enable socket.io communications
+* **socketLogin** Need to be called to in order to establish connection to socket.io server - managed by the SDK internally
+* **on** listen on an action in order to het the data from the server side
+
+### 1.8.1 (2015-11-11)
+
+#### Features
+
+* **callSignupOnSingInSocialError** The default is true. This allow to make only one call with social signin. In case the user is not sign up the SDK catch the error and call the sign up internally.
+* Fix issue with Facebook social login on Mobile devices
+
 ### 1.8.0 (2015-09-17)
 
 

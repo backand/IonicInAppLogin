@@ -74,6 +74,6 @@ angular.module('ionicApp', ['ionic', 'backand', 'SimpleRESTIonic.services', 'Sim
           }
         }
       })
-    $urlRouterProvider.otherwise("/tab/home");
+    $urlRouterProvider.otherwise("/tab/signup");
 
   })
