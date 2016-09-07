@@ -25,10 +25,12 @@
         </div>
       </form>
       <div class="padding">
-        <ion-item nav-clear menu-close class="dark-bg light item-icon-left" ng-click="login.facebookTokenSingin()">
-          <i class="icon ion-social-facebook"></i>
-          Facebook Login
-        </ion-item>
+        <ion-list>
+            <ion-item nav-clear menu-close class="dark-bg light item-icon-left" ng-click="login.facebookTokenSingin()">
+              <i class="icon ion-social-facebook"></i>
+              Facebook Login
+            </ion-item>
+        </ion-list>
       </div>
       <div class="card" ng-if="login.isLoggedWihtBackand">
         <div class="item item-divider">
